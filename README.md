@@ -1,0 +1,2 @@
+# first-project
+LOCAL FOOD WASTE MANAGEMENT SYSTEM
