@@ -726,6 +726,9 @@ elif page=="sql Quary & Visualization":
             results = mycursor.fetchall()
             percentage = pd.DataFrame(results, columns=["Status","total_claims","percentage"])
             st.write(percentage)
+            fig,ax=plt.subplots()
+            ax.pie(percentage["percentage"], labels=percentage["Status"], autopct='%1.2f%%')
+            st.pyplot(fig) 
 
     
     st.subheader("Analysis & Insights")
